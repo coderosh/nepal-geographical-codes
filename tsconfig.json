@@ -12,5 +12,7 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["**/*.test.ts", "node_modules", "jest-config.ts"]
 }
