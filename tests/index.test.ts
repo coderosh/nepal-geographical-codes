@@ -54,3 +54,55 @@ describe('getLocalBodiesInDistrict', () => {
     ])
   })
 })
+
+describe('getDistrictsInProvince', () => {
+  test('should return all districts in province', () => {
+    expect(getDistrictsInProvince('1')).toEqual([
+      'Bhojpur',
+      'Dhankuta',
+      'Ilam',
+      'Jhapa',
+      'Khotang',
+      'Morang',
+      'Okhaldhunga',
+      'Panchthar',
+      'Sankhuwasabha',
+      'Solukhumbu',
+      'Sunsari',
+      'Taplejung',
+      'Tehrathum',
+      'Udayapur',
+    ])
+  })
+})
+
+describe('getDistrictsInProvince', () => {
+  test('should return all districts in province', () => {
+    expect(getDistrictsInProvince('Sudurpaschim Province')).toEqual([
+      'Achham',
+      'Baitadi',
+      'Bajhang',
+      'Bajura',
+      'Dadeldhura',
+      'Darchula',
+      'Doti',
+      'Kailali',
+      'Kanchanpur',
+    ])
+  })
+})
+
+describe('getDistrictsInProvince', () => {
+  test('should return all districts in province', () => {
+    expect(getDistrictsInProvince('Madhesh Province')).toEqual([
+      'Bara',
+      'Dhanusa',
+      'Mahottari',
+      'Parsa',
+      'Rautahat',
+      'Saptari',
+      'Sarlahi',
+      'Siraha',
+    ])
+  })
+})

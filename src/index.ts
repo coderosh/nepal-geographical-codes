@@ -4,6 +4,7 @@ import districts from './data/districts.json'
 import localBodies from './data/local-bodies.json'
 import districtsInProvinces from './data/districts-in-provinces.json'
 import localBodiesInDistrict from './data/local-bodies-in-district.json'
+// import provinces from './data/province-name.json'
 
 const getLocalBodyCode = (localBody: keyof typeof localBodies) => {
   const key = capitalize(localBody) as keyof typeof localBodies
@@ -21,9 +22,10 @@ const getLocalBodiesInDistrict = (district: keyof typeof districts) => {
 }
 
 const getDistrictsInProvince = (
-  province: '1' | '2' | '3' | '4' | '5' | '6' | '7'
+  province: keyof typeof districtsInProvinces
 ) => {
-  return districtsInProvinces[province]
+  const key = capitalize(province) as keyof typeof districtsInProvinces
+  return districtsInProvinces[key]
 }
 
 export {

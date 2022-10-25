@@ -89,5 +89,79 @@
     "Doti",
     "Kailali",
     "Kanchanpur"
-  ]
+  ],
+  "Madhesh Province": [
+    "Bara",
+    "Dhanusa",
+    "Mahottari",
+    "Parsa",
+    "Rautahat",
+    "Saptari",
+    "Sarlahi",
+    "Siraha"
+  ],
+  "Bagmati Province": [
+    "Bhaktapur",
+    "Chitwan",
+    "Dhading",
+    "Dolakha",
+    "Kathmandu",
+    "Kavrepalanchowk",
+    "Lalitpur",
+    "Makwanpur",
+    "Nuwakot",
+    "Ramechhap",
+    "Rasuwa",
+    "Sindhuli",
+    "Sindhupalchok"
+  ],
+  "Gandaki Province": [
+    "Baglung",
+    "Gorkha",
+    "Kaski",
+    "Lamjung",
+    "Manang",
+    "Mustang",
+    "Myagdi",
+    "Nawalpur",
+    "Parbat",
+    "Syangja",
+    "Tanahu"
+  ],
+  "Lumbini Province": [
+    "Arghakhanchi",
+    "Banke",
+    "Bardiya",
+    "Dang",
+    "Eastern Rukum",
+    "Gulmi",
+    "Kapilvastu",
+    "Palpa",
+    "Parasi",
+    "Pyuthan",
+    "Rolpa",
+    "Rupandehi"
+  ],
+  "Karnali Province": [
+    "Dailekh",
+    "Dolpa",
+    "Humla",
+    "Jajarkot",
+    "Jumla",
+    "Kalikot",
+    "Mugu",
+    "Salyan",
+    "Surkhet",
+    "Western Rukum"
+  ],
+  "Sudurpaschim Province": [
+    "Achham",
+    "Baitadi",
+    "Bajhang",
+    "Bajura",
+    "Dadeldhura",
+    "Darchula",
+    "Doti",
+    "Kailali",
+    "Kanchanpur"]
 }
