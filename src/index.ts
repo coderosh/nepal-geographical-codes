@@ -20,10 +20,36 @@ const getLocalBodiesInDistrict = (district: keyof typeof districts) => {
   return localBodiesInDistrict[key]
 }
 
-const getDistrictsInProvince = (
-  province: '1' | '2' | '3' | '4' | '5' | '6' | '7'
-) => {
-  return districtsInProvinces[province]
+const provinceNames = [
+  '1',
+  'Madhesh',
+  'Bagmati',
+  'Gandaki',
+  'Lumbini',
+  'Karnali',
+  'Sudurpashchim',
+] as const
+
+type ProvinceParam =
+  | keyof typeof districtsInProvinces
+  | typeof provinceNames[number]
+  | `${typeof provinceNames[number]} Province`
+
+const getDistrictsInProvince = (province: ProvinceParam) => {
+  if (!isNaN(+province)) {
+    return districtsInProvinces[province as keyof typeof districtsInProvinces]
+  }
+
+  const provinceName = capitalize(province).replace(
+    ' Province',
+    ''
+  ) as typeof provinceNames[number]
+
+  const index = provinceNames.indexOf(provinceName)
+
+  return districtsInProvinces[
+    `${index + 1}` as keyof typeof districtsInProvinces
+  ]
 }
 
 export {
