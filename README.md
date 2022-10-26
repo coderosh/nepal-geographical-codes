@@ -64,6 +64,14 @@ This package exports 4 functions and 4 objects.
   ```js
   import { getDistrictsInProvince } from 'nepal-geographical-codes'
 
+  const districts = getDistrictsInProvince('Bagmati')
+
+  console.log(districts) // ['Bhaktapur','Chitwan', ...]
+  ```
+
+  ```js
+  import { getDistrictsInProvince } from 'nepal-geographical-codes'
+
   const districts = getDistrictsInProvince('Bagmati Province')
 
   console.log(districts) // ['Bhaktapur','Chitwan', ...]

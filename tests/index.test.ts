@@ -56,7 +56,7 @@ describe('getLocalBodiesInDistrict', () => {
 })
 
 describe('getDistrictsInProvince', () => {
-  test('should return all districts in province', () => {
+  test('should return all districts in province (province number)', () => {
     expect(getDistrictsInProvince('1')).toEqual([
       'Bhojpur',
       'Dhankuta',
@@ -77,8 +77,8 @@ describe('getDistrictsInProvince', () => {
 })
 
 describe('getDistrictsInProvince', () => {
-  test('should return all districts in province', () => {
-    expect(getDistrictsInProvince('Sudurpaschim Province')).toEqual([
+  test('should return all districts in province (province name)', () => {
+    expect(getDistrictsInProvince('Sudurpashchim')).toEqual([
       'Achham',
       'Baitadi',
       'Bajhang',
@@ -93,7 +93,7 @@ describe('getDistrictsInProvince', () => {
 })
 
 describe('getDistrictsInProvince', () => {
-  test('should return all districts in province', () => {
+  test('should return all districts in province (province name ending with province)', () => {
     expect(getDistrictsInProvince('Madhesh Province')).toEqual([
       'Bara',
       'Dhanusa',
